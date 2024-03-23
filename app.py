@@ -43,10 +43,14 @@ for image in images:
 
     #Loading the images
     opencv_image = load_image(image)
+    #save input images to the folder
     save_image(image.name, opencv_image, string="Input")
     st.image(opencv_image, channels="BGR")
+    #predict the data
     model.predict(opencv_image, save=True)
+    #read the predicted data
     result_image = read_image()
     st.image(result_image, channels="BGR")
+    #save the predicted images
     save_image(image.name, result_image, string="Output")
     
