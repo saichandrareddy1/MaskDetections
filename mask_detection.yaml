@@ -1,0 +1,10 @@
+path: /content/drive/MyDrive/public sapients/Mask Detection/Mask Detection/data/MaskDetections/datasets
+train: train/images  
+val: val/images  
+#test:  # test images (optional)
+
+# Classes 3
+names:
+  0: without_mask
+  1: with_mask
+  2: mask_weared_incorrect
